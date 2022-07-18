@@ -390,6 +390,8 @@ footer a, footer p{
     }
     .imgLight img:hover{
         box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: all 2s;
+        transform: scale(110%);
     }
 }
 /* SERVICES STYLES & GRID  **********/
