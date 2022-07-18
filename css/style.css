@@ -388,6 +388,9 @@ footer a, footer p{
     .termCondCheck:hover{
         text-decoration: underline;
     }
+    .imgLight img:hover{
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    }
 }
 /* SERVICES STYLES & GRID  **********/
 .mainGridServices img{
