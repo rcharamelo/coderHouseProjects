@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poiret+One&display=swap');
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Poiret One', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+/*  BODY GENERAL STYLE */
+body{
+    text-align: center;
+    font-family: 'Poiret One', sans-serif;
+    background-image: url(../images/womanSunset.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+/* HEADER GENERAL STYLE */
+header{
+    background-color: rgba(51, 51, 51, 0.9);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    border: 1px solid black;
+    grid-area: header;
+}
+/* NAV STYLE */
+nav ul li{
+    list-style-type: none;
+}
+nav{
+    width: 85%;
+    grid-area: nav;
+    display: flex;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "logo title lang"
+    "logo title navMenu";
+}
+nav ul{
+    grid-area: navMenu;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+/* MAIN STYLE */
+main{
+    position: relative;
+    margin: 1% auto;
+    padding: 5%;
+    width: 85%;
+    background-color: rgba(255, 255, 255,0.6); 
+    background-repeat:  no-repeat; /* PARALLAX EFFECT */
+    height: max-content;  /* PARALLAX EFFECT */
+    box-shadow: 7px 13px 37px #000;
+    grid-area: main;
+}
+/* MAIN CONTENT STYLE */
+main h2{
+    padding: 0.62rem;
+    font-size: 2.4rem;
+    margin: 0.62rem auto;
+    font-weight: bolder;
+}
+main h3{
+    padding: 0.62rem;
+    font-size: 2rem;
+    margin: 0 auto;
+    font-weight: bolder;
+}
+main p{
+    text-align: justify;
+    padding: 2%;
+    margin: 2%;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+/* FOOTER GENERAL STYLE */
+footer{
+    background-color: rgba(51, 51, 51, 0.9);
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 0;
+    padding: 0.31rem;
+    grid-area: footer;
+    font-size: 1.2rem;
+}
+footer a, footer p{
+    color: white;
+    text-decoration: none;
+}
+/* HEADER GRID CONFIGURATION */
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang{
+    grid-area: lang;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.31rem;
+}
+.lang img{
+    margin: 0.62rem;
+}
+.lang a{
+    display: inline-block;
+}
+/* FOOTER GRID CONFIG */
+.footerCont{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "backNav  cookies socialCont"
+    "termCond copyR    socialCont"
+    "devDiv   devDiv   join";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 0.5fr;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.backNav{
+    grid-area: backNav;
+}
+.cookies{
+    grid-area: cookies;
+}
+.cookies a{
+    align-items: center;
+}
+.termCond{
+    grid-area: termCond;
+}
+.join{
+    grid-area: join;
+}
+.socialCont{
+    grid-area: socialCont;
+    display: flex;
+    flex-direction: column;
+}
+.socialCont img{
+    margin: 0.31rem;
+}
+.copyR{
+    grid-area: copyR;
+}
+.devDiv{
+    grid-area: devDiv;
+}
+.grillaGeneral{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    margin-bottom: 1,5em;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    gap: 0.31rem;
+}
+/* SOBRE CLAUDIA UL STYLES */
+.divUl ul{
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.25rem;
+    border-radius: 0.8rem;
+    width: max-content;
+    box-shadow: 7px 13px 37px #000;
+}
+.mainLi , .mainLi a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+/* SOBRE CLAUDIA GRID CONFIG */
+.fatherAbout{
+    display: grid;
+    grid-template-areas: 
+    "whoIsCont"
+    "whoIsUl"
+    "procedImg"
+    "procedCont"
+    "historyImg"
+    "historyCont"
+    "pathImg"
+    "pathCont"
+    "certImg"
+    "certCont";
+    gap: 1rem;
+}
+.mainGridAbout img{
+    box-shadow: 7px 13px 37px #000;
+}
+.whoIsUl{
+    grid-area: whoIsUl;
+    font-size: 1.8rem;
+}
+.whoIsCont{
+    grid-area: whoIsCont;
+}
+.procedImg{
+    grid-area: procedImg;
+}
+.procedCont{
+    grid-area: procedCont;
+}
+.historyImg{
+    grid-area: historyImg;
+}
+.historyCont{
+    grid-area: historyCont;
+}
+.pathImg{
+    grid-area: pathImg;
+}
+.pathCont{
+    grid-area: pathCont;
+}
+.certImg{
+    grid-area: certImg;
+}
+.certCont{
+    grid-area: certCont;
+}
+/* MEDIA QUERY PROPERTIES */
+@media (min-width: 550px) {
+    .grillaGeneral{
+        grid-template-areas: 
+        "header header"
+        "nav    nav"
+        "main    main"
+        "footer footer";
+        grid-template-columns: auto auto;
+    }
+
+    .footerCont{
+    margin: 0;
+    grid-template-areas: 
+    "backNav  cookies socialCont"
+    "termCond copyR    join"
+    "devDiv   devDiv   devDiv";
+    align-items: center;
+    }
+    .socialCont{
+        display: inline-block;
+    }
+        /* ABOUT CLAUDIA MEDIA QUERY */
+    .fatherAbout{
+        display: grid;
+        grid-template-areas: 
+        "whoIsUl      whoIsCont"
+        "procedImg    procedCont"
+        "historyCont  historyImg"
+        "pathImg      pathCont"
+        "certCont     certImg";
+        gap: 1rem;
+        align-items: center;
+    }
+    /* SERVICES MEDIA QUERY */
+    .servicesFather{
+        display: grid;
+        grid-template-areas: 
+        "servicesUl    servicesUl"
+        "therapyImg    therapyCont"
+        "decoBioCont   decoBioImg"
+        "decoArbImg    decoArbCont"
+        "conflictCont  conflictImg"
+        "reikiImg      reikiCont";
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width:768px) {
+    .grillaGeneral{
+        grid-template-areas: 
+        "header header   header"
+        "nav    nav      nav"
+        "main    main    main"
+        "footer footer   footer";
+    }
+    /* ABOUT CLAUDIA MEDIA QUERY *****/
+    .fatherAbout{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "whoIsUl      whoIsCont"
+        "procedImg    procedCont"
+        "historyCont  historyImg"
+        "pathImg      pathCont"
+        "certCont     certImg";
+        gap: 5px;
+        align-items: center;
+    }
+    section  picture img{
+        height: 250px;
+    }
+    /* SERVICES MEDIA QUERY *******/
+    .servicesFather{
+        display: grid;
+        margin: 0 auto;
+        grid-template-areas: 
+        "servicesUl    servicesUl"
+        "therapyImg    therapyCont"
+        "decoBioCont   decoBioImg"
+        "decoArbImg    decoArbCont"
+        "conflictCont  conflictImg"
+        "reikiImg      reikiCont";
+        align-items: center;
+    }
+    /* TESTIMONY MEDIA QUERY */
+}
+@media (min-width:1024px) {
+        /* TESTIMONY MEDIA QUERY */
+    /* LINKS HOVER EFFECT *******/
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a:hover:not(.active){
+        background-color: rgba(255, 255, 255,0.5);
+        padding: 6px 8px; 
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+    .active {
+        background-color: rgba(255, 255, 255,0.5);
+        border-radius: 5px;
+        padding: 6px 8px;
+        text-transform: uppercase;
+    }
+    .divUl a:hover{
+        background-color: rgba(255, 255, 255,0.6);
+        transition: 0.5s;
+        border-radius: 5px;
+        padding: 4px 8px;
+    }
+    footer a:hover{
+        background-color: rgba(255, 255, 255,0.6);
+        transition: 0.5s;
+        border-radius: 5px;
+        padding: 6px 8px;
+    }
+    .devDiv a:hover{
+        margin-bottom: 5px;
+        background-color: rgba(255, 165, 0, 0.8);
+        padding: 5px 5px;
+    }
+    .divUl{
+        font-size: 2rem;
+    }
+    /* FORM A HOVER **********/
+    input:hover{
+        background-color: rgba(255, 255, 255,0.6);
+        padding: 8px 12px; 
+        transition: 0.5s;
+    }
+    textarea:hover{
+        background-color: rgba(255, 255, 255,0.6);
+        padding: 8px 12px; 
+        transition: 0.5s; 
+    }
+    .termCondCheck:hover{
+        text-decoration: underline;
+    }
+}
+/* SERVICES STYLES & GRID  **********/
+.mainGridServices img{
+    box-shadow: 7px 13px 37px #000;
+    margin: 10px;
+}
+
+.mainGridServices{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "servicesUl"
+    "therapyImg"
+    "therapyCont"
+    "decoBioImg"
+    "decoBioCont"
+    "decoArbImg"
+    "decoArbCont"
+    "conflictImg"
+    "conflictCont"
+    "reikiImg"
+    "reikiCont";
+    gap: 10px;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+.mainGridServices ul{
+    grid-area: servicesUl;
+    display: flex;
+    flex-direction: column;
+}
+.servicesUl{
+    margin: 0 auto;
+    grid-area: servicesUl;
+    margin: 1.2rem;
+}
+.therapyImg{
+    grid-area: therapyImg;
+}
+.therapyCont{
+    grid-area: therapyCont;
+}
+.decoBioImg{
+    grid-area: decoBioImg;
+}
+.decoBioCont{
+    grid-area: decoBioCont;
+}
+.decoArbImg{
+    grid-area: decoArbImg;
+}
+.decoArbCont{
+    grid-area: decoArbCont;
+}
+.conflictImg{
+    grid-area: conflictImg;
+}
+.conflictCont{
+    grid-area: conflictCont;
+}
+.reikiImg{
+    grid-area: reikiImg;
+}
+.reikiCont{
+    grid-area: reikiCont;
+}
+/* TESTIMONY STYLES */
+.mainGridTest img{
+    box-shadow: 7px 13px 37px #000;
+}
+.testimFather{
+    width: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template-areas: 
+    "testimTitle"
+    "cardOne"
+    "cardTwo"
+    "cardThree"
+    "cardFour"
+    "cardFive"
+    "cardSix";
+    gap: 2rem;
+}
+/* TESTIMONY GRID CONFIG */
+.testimTitle{
+grid-area: testimTitle;
+}
+.cardOne{
+    grid-area: cardOne;
+}
+.cardTwo{
+    grid-area: cardTwo;
+}
+.cardThree{
+    grid-area: cardThree;
+}
+.cardFour{
+    grid-area: cardFour;
+}
+.cardFive{
+    grid-area: cardFive;
+}
+.cardSix{
+    grid-area: cardSix;
+}
+/* TESTIMONY MEDIA CONFIG */
+@media (min-width:768px) {
+    .testimFather{
+        grid-template-areas: 
+        "testimTitle    testimTitle"
+        "cardOne        cardTwo"
+        "cardThree      cardFour"
+        "cardFive       cardSix";
+    }
+}
+@media (min-width:1024px) {
+    .testimFather{
+        grid-template-areas: 
+        "testimTitle   testimTitle   testimTitle"
+        "cardOne       cardTwo       cardThree"
+        "cardFour      cardFive      cardSix";
+    }
+}
+/* CONTACT FORM STYLE *****************/
+.contactForm {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.88rem;
+    margin: 0 auto;
+    top: 0.62rem;
+    border-radius: 0.62rem;    
+    border: 1px solid black;
+    position: relative;
+    box-shadow: 7px 13px 37px #000;
+    }
+/**** FORM TITLE STYLE ****/
+.formTitle {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0px auto;
+    padding: 0.62rem;
+}
+.divStyle {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0.62rem;
+    width: 100%;
+}
+/* BOXES STYLE */
+.boxStyle {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.31rem;
+    margin-left: 0 auto;
+    border-radius: 0.31rem;
+    color: white;
+}
+/* FORM LIST STYLE */
+.formLi {
+    list-style: none;
+    color: white;
+    text-align: justify;
+    padding: 5px 2px 5px;
+    font-size: 1.6rem;
+}
+.termCondCheck {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+}
+/* H4 STYLE */
+.formH4 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding: 0.62rem;
+}
+/* BUTTON STYLE */
+.button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0.31rem 1.2rem;
+}
+
