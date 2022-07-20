@@ -50,6 +50,7 @@ nav{
     grid-template-areas: 
     "logo title lang"
     "logo title navMenu";
+    z-index: 1;
 }
 nav ul{
     grid-area: navMenu;
@@ -66,7 +67,7 @@ h1{
 /* MAIN STYLE */
 main{
     position: relative;
-    margin: 1% auto;
+    margin: 5% auto;
     padding: 5%;
     width: 85%;
     background-color: rgba(255, 255, 255,0.6); 
