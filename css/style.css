@@ -353,7 +353,7 @@ footer a, footer p{
         transition: 0.5s;
         border-radius: 5px;
     }
-    .active {
+    .active1 {
         background-color: rgba(255, 255, 255,0.5);
         border-radius: 5px;
         padding: 6px 8px;
@@ -467,61 +467,7 @@ footer a, footer p{
 }
 /* TESTIMONY STYLES */
 .mainGridTest img{
-    box-shadow: 7px 13px 37px #000;
-}
-.testimFather{
-    width: 100%;
-    padding: 2%;
-    display: grid;
-    grid-template-areas: 
-    "testimTitle"
-    "cardOne"
-    "cardTwo"
-    "cardThree"
-    "cardFour"
-    "cardFive"
-    "cardSix";
-    gap: 2rem;
-}
-/* TESTIMONY GRID CONFIG */
-.testimTitle{
-grid-area: testimTitle;
-}
-.cardOne{
-    grid-area: cardOne;
-}
-.cardTwo{
-    grid-area: cardTwo;
-}
-.cardThree{
-    grid-area: cardThree;
-}
-.cardFour{
-    grid-area: cardFour;
-}
-.cardFive{
-    grid-area: cardFive;
-}
-.cardSix{
-    grid-area: cardSix;
-}
-/* TESTIMONY MEDIA CONFIG */
-@media (min-width:768px) {
-    .testimFather{
-        grid-template-areas: 
-        "testimTitle    testimTitle"
-        "cardOne        cardTwo"
-        "cardThree      cardFour"
-        "cardFive       cardSix";
-    }
-}
-@media (min-width:1024px) {
-    .testimFather{
-        grid-template-areas: 
-        "testimTitle   testimTitle   testimTitle"
-        "cardOne       cardTwo       cardThree"
-        "cardFour      cardFive      cardSix";
-    }
+    /* box-shadow: 7px 13px 37px #000; */
 }
 /* CONTACT FORM STYLE *****************/
 .contactForm {
