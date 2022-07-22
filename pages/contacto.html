@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/favIconLoto.png">
     <title>Contacto</title>
@@ -30,14 +31,14 @@
                     <li>
                         <a href="testimonios.html">Testimonios</a>
                     </li>
-                    <li class="active">
+                    <li class="active1">
                         <a href="contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <!-- LANGUAGE SELECTION FLAGS EN FUNCIONAMIENTO SOLO INDEX EL RESTO A MODO DE-->
                 <span class="lang">
                     <!-- LINKS DE CAMBIO DE IDIOMA A MODO DE EJEMPLO -->
-                    <a class="active" href="#">
+                    <a class="active1" href="#">
                         <img src="../images/SpainFlagIcon16x20.svg" alt="Español">
                     </a>                        
                     <a href="#">
@@ -57,31 +58,36 @@
                         <div class="divStyle">
                             <input class="boxStyle" type="text" name="nombre" placeholder="Ingrese su nombre" maxlength="20" required>
                             <input class="boxStyle" type="text" name="apellido" placeholder="Ingrese su apellido" maxlength="20" required>
+<<<<<<< HEAD
                             <input class="boxStyle" type="text" name="telefono" placeholder="Ingrese su número de teléfono" maxlength="20" required>
                             <input class="boxStyle" type="email" name="mail" placeholder="Ingrese su e-mail @" maxlength="30" required>
+=======
+                            <input class="boxStyle" type="number" name="telefono" placeholder="Ingrese su número de teléfono" maxlength="20" required>
+                            <input class="boxStyle" type="email" name="mail" placeholder="Ingrese su e-mail @" maxlength="20" required>
+>>>>>>> modificaciones
                         </div>
                         <!-- SERVICE SELECTION CHECKBOX -->
                         <h4 class="formH4" >Seleccione el servicio de su interés</h4>
                         <div>
                             <ul>
                                 <li class="formLi" >
-                                    <input id="superacion" type="checkbox">
+                                    <input id="superacion" type="checkbox" name="superac-person" value="seleccionado">
                                     <label for="superacion">Terapia de superacón personal</label>
                                 </li>
                                 <li class="formLi" >
-                                    <input id="deco-enfermedades" type="checkbox">
+                                    <input id="deco-enfermedades" type="checkbox" name="deco-enfermedades" value="seleccionado">
                                     <label for="deco-enfermedades">De-Codificación biológica de las enfermedades</label>
                                 </li>
                                 <li class="formLi" >
-                                    <input id="deco-arbol" type="checkbox">
+                                    <input id="deco-arbol" type="checkbox" name="deco-arbol" value="seleccionado">
                                     <label for="deco-arbol">De-Codificación biológica del árbol genealógico</label>
                                 </li>
                                 <li class="formLi" >
-                                    <input id="capacitacion" type="checkbox">
+                                    <input id="capacitacion" type="checkbox" name="capacitacion" value="seleccionado">
                                     <label for="capacitacion">Capacitación mental y resolución de conflictos con percepción Dermo-Óptica</label>
                                 </li>
                                 <li class="formLi" >
-                                    <input id="reiki" type="checkbox">
+                                    <input id="reiki" type="checkbox" name="reiki" value="seleccionado">
                                     <label for="reiki">Curso de Reiki Usui Tibetano</label>
                                 </li>
                             </ul>
@@ -91,8 +97,8 @@
                         <!-- MODALITY SELECTION LIST -->
                         <h4 class="formH4" >Seleccione la modalidad</h4>
                         <select class="boxStyle" name="modalidad">
-                            <option value="P">Presencial</option>
-                            <option value="V">Video llamada</option>
+                            <option value="Presencial">Presencial</option>
+                            <option value="VideoLlamada">Video llamada</option>
                         </select>
                         <!-- TERMS & CONDITIONS CHECKBOX AND LINK -->
                         <div class="formLi">
@@ -144,5 +150,6 @@
                 </div>
             </div> 
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

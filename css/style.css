@@ -353,7 +353,7 @@ footer a, footer p{
         transition: 0.5s;
         border-radius: 5px;
     }
-    .active {
+    .active1 {
         background-color: rgba(255, 255, 255,0.5);
         border-radius: 5px;
         padding: 6px 8px;
@@ -466,62 +466,60 @@ footer a, footer p{
     grid-area: reikiCont;
 }
 /* TESTIMONY STYLES */
-.mainGridTest img{
-    box-shadow: 7px 13px 37px #000;
-}
-.testimFather{
-    width: 100%;
-    padding: 2%;
-    display: grid;
-    grid-template-areas: 
-    "testimTitle"
-    "cardOne"
-    "cardTwo"
-    "cardThree"
-    "cardFour"
-    "cardFive"
-    "cardSix";
-    gap: 2rem;
-}
-/* TESTIMONY GRID CONFIG */
 .testimTitle{
-grid-area: testimTitle;
+    font-size: 2em;
+    text-align: center;
 }
-.cardOne{
-    grid-area: cardOne;
+.container{
+    margin: 2% auto;
 }
-.cardTwo{
-    grid-area: cardTwo;
+.img-text{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 10% 5%;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 15px;
 }
-.cardThree{
-    grid-area: cardThree;
+.img-text h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30%;
+    margin: 20% auto 0;
 }
-.cardFour{
-    grid-area: cardFour;
+.single-box{
+    position: relative;
 }
-.cardFive{
-    grid-area: cardFive;
+.img-area{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    top: 7em;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    margin: 0 auto;
 }
-.cardSix{
-    grid-area: cardSix;
+.row{
+    align-items: center;
 }
-/* TESTIMONY MEDIA CONFIG */
-@media (min-width:768px) {
-    .testimFather{
-        grid-template-areas: 
-        "testimTitle    testimTitle"
-        "cardOne        cardTwo"
-        "cardThree      cardFour"
-        "cardFive       cardSix";
-    }
+.img-area img{
+    width: 100%;
 }
-@media (min-width:1024px) {
-    .testimFather{
-        grid-template-areas: 
-        "testimTitle   testimTitle   testimTitle"
-        "cardOne       cardTwo       cardThree"
-        "cardFour      cardFive      cardSix";
-    }
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -50px;
+}
+.carousel-indicators button{
+    background-color: #000;
+    border-radius: 10%;
+    width: 15   px;
+    height: 15px;
 }
 /* CONTACT FORM STYLE *****************/
 .contactForm {
