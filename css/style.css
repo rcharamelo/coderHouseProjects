@@ -46,12 +46,6 @@ nav{
     width: 85%;
     background-color: rgba(51, 51, 51, 0.9);
     margin: 0 auto;
-    /* grid-area: nav; */
-    /* display: flex; */
-    /* display: grid; */
-/*     grid-template-areas: 
-    "logo title lang"
-    "logo title navMenu"; */
 }
 /* nav ul{
     grid-area: navMenu;
@@ -60,10 +54,6 @@ h1{
     font-size: 2.5rem;
     color: white;
     margin: 0 auto;
-    /* grid-area: title; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     font-family: 'Dancing Script', cursive;
 }
 /* MAIN STYLE */
@@ -105,9 +95,14 @@ footer{
     width: 100%;
     border: 1px solid black;
     margin-bottom: 0;
-    padding: 0.31rem;
-    grid-area: footer;
+    /* padding: 0.31rem; */
     font-size: 1.2rem;
+    display: grid;
+    grid-template-areas: 
+    "socialCont"
+    "join"
+    "acordContainer"
+    "copyR";
 }
 footer a, footer p{
     color: white;
@@ -127,73 +122,47 @@ footer a, footer p{
     color: #fe0076;
     font-size: 2em;
 }
-
-/* HEADER GRID CONFIGURATION */
-/* .logo{
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* .lang{
-    grid-area: lang;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.31rem;
+h4{
+    color: #fff;
 }
-.lang img{
-    margin: 0.62rem;
+.acordContainer{
+    width: max-content;
+    margin: 0 auto;
+    columns: #fff;
+    grid-area: acordContainer;
 }
-.itaFlag{
-    background-color: #fff;
+.acordContainer ul{
+    list-style-type: none;
+    padding: 1rem;
 }
-.lang a{
-    display: inline-block;
-} */
+.acordContainer li{
+    padding: 0.5rem;
+}
+/* FOOTER ACORDEON CONFIG */
+details{
+    cursor: pointer;
+}
+summary{
+    color: white;
+    list-style: none;
+}
+summary::after{
+    content: '+';
+    padding-left: 1rem;
+}
+details[open] summary::after{
+    content: '-';
+}
 /* FOOTER GRID CONFIG */
-.footerCont{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    "termCond   socialCont"
-    "cookies    socialCont"
-    "copyR      join"
-    "devDiv     devDiv";
-    grid-template-rows: 1fr 1fr 0.5fr;
-    align-items: center;
-    font-size: 1.6rem;
-    bottom: 0;
-}
-.backNav{
-    grid-area: backNav;
-}
-.cookies{
-    grid-area: cookies;
-}
-.cookies a{
-    align-items: center;
-}
-.termCond{
-    grid-area: termCond;
+.socialCont{
+    grid-area: socialCont;
+    display: block;
 }
 .join{
     grid-area: join;
 }
-.socialCont{
-    grid-area: socialCont;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* .socialCont img{
-    margin: 0.31rem;
-} */
 .copyR{
     grid-area: copyR;
-}
-.devDiv{
-    grid-area: devDiv;
-    color: rgba(0, 0, 0, 0.6);
 }
 /* .grillaGeneral{
     width: 100%;
@@ -283,16 +252,17 @@ footer a, footer p{
         "footer footer";
         grid-template-columns: auto auto;
     } */
-
-    .footerCont{
-    margin: 0;
-    grid-template-areas: 
-    "termCond  cookies  socialCont"
-    "devDiv    copyR    join";
-    align-items: center;
-    }
-    .socialCont{
-        display: inline-block;
+    footer{
+        background-color: rgba(51, 51, 51, 0.9);
+        width: 100%;
+        border: 1px solid black;
+        margin-bottom: 0;
+        /* padding: 0.31rem; */
+        font-size: 1.2rem;
+        display: grid;
+        grid-template-areas: 
+        "socialCont  copyR"
+        "join        acordContainer";
     }
         /* ABOUT CLAUDIA MEDIA QUERY */
     .fatherAbout{
@@ -360,12 +330,26 @@ footer a, footer p{
     /* TESTIMONY MEDIA QUERY */
 }
 @media (min-width:1024px) {
-        /* TESTIMONY MEDIA QUERY */
+    .instaIcon, .faceIcon, .linkIcon{
+        font-size: 3em;
+    }   
+    footer{
+            background-color: rgba(51, 51, 51, 0.9);
+            width: 100%;
+            border: 1px solid black;
+            margin-bottom: 0;
+            /* padding: 0.31rem; */
+            font-size: 1.2rem;
+            display: grid;
+            justify-content: space-evenly;
+            align-items: center;
+            grid-template-areas: 
+            "join socialCont copyR acordContainer";
+        }
+        .join, .copyR, summary{
+            font-size: 1.8rem;
+        }
     /* LINKS HOVER EFFECT *******/
-    nav ul{
-        display: flex;
-        justify-content: space-between;
-    }
     nav a:hover:not(.active){
         box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         padding: 6px 8px; 
@@ -398,7 +382,7 @@ footer a, footer p{
         box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         transition: 0.5s;
         border-radius: 5px;
-        padding: 16px 12px;
+        padding: 12px 12px;
     }
     .devDiv a:hover{
         background-color: rgba(255, 165, 0, 0.8);
@@ -427,6 +411,13 @@ footer a, footer p{
         box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         transition: all 2s;
         transform: scale(110%);
+    }
+    summary:hover{
+        color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s;
+        border-radius: 5px;
+        padding: 4px 8px;
     }
 }
 /* SERVICES STYLES & GRID  **********/
