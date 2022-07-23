@@ -21,8 +21,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    /* display: flex; */
-    /* flex-direction: column; */
     min-height: 100%;
 }
 nav a{
@@ -38,7 +36,6 @@ header{
     width: 100%;
     top: 0;
     border: 1px solid black;
-    /* grid-area: header; */
     z-index: 1;
 }
 /* NAV STYLE */
@@ -47,11 +44,8 @@ nav{
     background-color: rgba(51, 51, 51, 0.9);
     margin: 0 auto;
 }
-/* nav ul{
-    grid-area: navMenu;
-} */
 h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
     margin: 0 auto;
     font-family: 'Dancing Script', cursive;
@@ -66,7 +60,6 @@ main{
     background-repeat:  no-repeat; /* PARALLAX EFFECT */
     height: max-content;  /* PARALLAX EFFECT */
     box-shadow: 7px 13px 37px #000;
-    /* grid-area: main; */
 }
 /* MAIN CONTENT STYLE */
 main h2{
@@ -95,7 +88,7 @@ footer{
     width: 100%;
     border: 1px solid black;
     margin-bottom: 0;
-    /* padding: 0.31rem; */
+    padding: 0.31rem;
     font-size: 1.2rem;
     display: grid;
     grid-template-areas: 
@@ -122,13 +115,9 @@ footer a, footer p{
     color: #fe0076;
     font-size: 2em;
 }
-h4{
-    color: #fff;
-}
 .acordContainer{
     width: max-content;
     margin: 0 auto;
-    columns: #fff;
     grid-area: acordContainer;
 }
 .acordContainer ul{
@@ -164,18 +153,6 @@ details[open] summary::after{
 .copyR{
     grid-area: copyR;
 }
-/* .grillaGeneral{
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    margin-bottom: 1,5em;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
-    gap: 0.31rem;
-} */
 /* SOBRE CLAUDIA UL STYLES */
 .divUl ul{
     list-style-type: none;
@@ -242,62 +219,39 @@ details[open] summary::after{
 .certCont{
     grid-area: certCont;
 }
+/* SERVICIOS GRI CONFIG */
+.servicesFather{
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    grid-template-areas: 
+    "servicesUl"
+    "therapyImg"    
+    "therapyCont"
+    "decoBioImg"
+    "decoBioCont"   
+    "decoArbImg"
+    "decoArbCont"
+    "conflictImg"
+    "conflictCont"  
+    "reikiImg"
+    "reikiCont";
+    align-items: center;
+    justify-content: center;
+}
 /* MEDIA QUERY PROPERTIES */
 @media (min-width: 550px) {
-    /* .grillaGeneral{
-        grid-template-areas: 
-        "header header"
-        "nav    nav"
-        "main    main"
-        "footer footer";
-        grid-template-columns: auto auto;
-    } */
+    h1{
+        font-size: 2.5rem;
+    }
     footer{
-        background-color: rgba(51, 51, 51, 0.9);
-        width: 100%;
-        border: 1px solid black;
-        margin-bottom: 0;
-        /* padding: 0.31rem; */
-        font-size: 1.2rem;
         display: grid;
         grid-template-areas: 
         "socialCont  copyR"
         "join        acordContainer";
     }
-        /* ABOUT CLAUDIA MEDIA QUERY */
-    .fatherAbout{
-        display: grid;
-        grid-template-areas: 
-        "whoIsUl      whoIsCont"
-        "procedImg    procedCont"
-        "historyCont  historyImg"
-        "pathImg      pathCont"
-        "certCont     certImg";
-        gap: 1rem;
-        align-items: center;
-    }
-    /* SERVICES MEDIA QUERY */
-    .servicesFather{
-        display: grid;
-        grid-template-areas: 
-        "servicesUl    servicesUl"
-        "therapyImg    therapyCont"
-        "decoBioCont   decoBioImg"
-        "decoArbImg    decoArbCont"
-        "conflictCont  conflictImg"
-        "reikiImg      reikiCont";
-        align-items: center;
-        justify-content: center;
-    }
-}
+} 
 @media (min-width:768px) {
-    .grillaGeneral{
-        grid-template-areas: 
-        "header header   header"
-        "nav    nav      nav"
-        "main    main    main"
-        "footer footer   footer";
-    }
     /* ABOUT CLAUDIA MEDIA QUERY *****/
     .fatherAbout{
         width: 100%;
@@ -330,19 +284,16 @@ details[open] summary::after{
     /* TESTIMONY MEDIA QUERY */
 }
 @media (min-width:1024px) {
+    h1{
+        font-size: 3rem;
+    }
     .instaIcon, .faceIcon, .linkIcon{
         font-size: 3em;
     }   
     footer{
-            background-color: rgba(51, 51, 51, 0.9);
-            width: 100%;
-            border: 1px solid black;
-            margin-bottom: 0;
-            /* padding: 0.31rem; */
             font-size: 1.2rem;
             display: grid;
             justify-content: space-evenly;
-            align-items: center;
             grid-template-areas: 
             "join socialCont copyR acordContainer";
         }
@@ -444,7 +395,7 @@ details[open] summary::after{
     "reikiCont";
     gap: 10px;
     align-items: center;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
 }
 .mainGridServices ul{
     grid-area: servicesUl;
@@ -452,9 +403,10 @@ details[open] summary::after{
     flex-direction: column;
 }
 .servicesUl{
-    margin: 0 auto;
+    width: 100%;
+    margin: 1.2rem auto;
     grid-area: servicesUl;
-    margin: 1.2rem;
+    overflow: hidden;
 }
 .therapyImg{
     grid-area: therapyImg;
