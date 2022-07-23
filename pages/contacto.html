@@ -1,55 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/favIconLoto.png">
-    <title>Contacto</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../images/favIconLoto.png">
+        <title>Contacto</title>
+    </head>
     <body>
         <!-- HEADER / NAVIGATION BAR -->
-        <header>
-            <nav>
-                <!-- LOGO & TITLE -->
-                <span class="logo">
-                    <img src="../images/florLotoIcon-48x48.png" alt="Logo_Lotto_Flower">
-                </span>
-                <h1>Claudia Corintio <br> Terapias Alternativas</h1>
-                <ul>
-                    <li><!-- APLICARLO A MOBILE -->
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="sobreClaudia.html">Sobre Claudia</a>
-                    </li>
-                    <li>
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="testimonios.html">Testimonios</a>
-                    </li>
-                    <li class="active1">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <!-- LANGUAGE SELECTION FLAGS EN FUNCIONAMIENTO SOLO INDEX EL RESTO A MODO DE-->
-                <span class="lang">
-                    <!-- LINKS DE CAMBIO DE IDIOMA A MODO DE EJEMPLO -->
-                    <a class="active1" href="#">
-                        <img src="../images/SpainFlagIcon16x20.svg" alt="Español">
-                    </a>                        
-                    <a href="#">
-                        <img src="../images/usaFlagIcon16x20.svg" alt="English">
+        <header class="navbar-dark bg-dark">
+            <h1>Claudia Corintio Terapias Alternativas</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/florLotoIcon-30x30.png" alt="Logo">
                     </a>
-                    <a href="#">
-                        <img src="../images/italianFlagIcon16x20.svg" alt="Italian">
-                    </a>                          
-                </span>                 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="../index.html">Index</a>
+                            <a class="nav-link" href="sobreClaudia.html">Sobre Claudia</a>
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                            <a class="nav-link" href="testimonios.html">Testimonios</a>
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>        
+<<<<<<< HEAD
             <main class="mainForm" id="Navegador">
                 <section class="father">
                     <!-- CONTACT FORM START -->
@@ -113,43 +97,103 @@
                     </form>
                 </section>
             </main> 
+=======
+        <main class="mainForm">
+            <section class="father">
+                <!-- CONTACT FORM START -->
+                <form class="contactForm" method="post" action="https://formspree.io/f/mknydbja">
+                    <h3 class="formTitle">Contáctame aquí</h3>
+                    <div class="divStyle">
+                        <input class="boxStyle" type="text" name="nombre" placeholder="Nombre" maxlength="20" required>
+                        <input class="boxStyle" type="text" name="apellido" placeholder="Apellido" maxlength="20" required>
+                        <input class="boxStyle" type="number" name="telefono" placeholder="Número de teléfono" maxlength="20" required>
+                        <input class="boxStyle" type="email" name="mail" placeholder="e-mail @" maxlength="35" required>
+                    </div>
+                    <!-- SERVICE SELECTION CHECKBOX -->
+                    <h4 class="formH4" >Seleccione el servicio de su interés</h4>
+                    <div>
+                        <ul>
+                            <li class="formLi" >
+                                <input id="superacion" type="checkbox" name="superac-person" value="seleccionado">
+                                <label for="superacion">Terapia de superacón personal</label>
+                            </li>
+                            <li class="formLi" >
+                                <input id="deco-enfermedades" type="checkbox" name="deco-enfermedades" value="seleccionado">
+                                <label for="deco-enfermedades">De-Codificación biológica de las enfermedades</label>
+                            </li>
+                            <li class="formLi" >
+                                <input id="deco-arbol" type="checkbox" name="deco-arbol" value="seleccionado">
+                                <label for="deco-arbol">De-Codificación biológica del árbol genealógico</label>
+                            </li>
+                            <li class="formLi" >
+                                <input id="capacitacion" type="checkbox" name="capacitacion" value="seleccionado">
+                                <label for="capacitacion">Capacitación mental y resolución de conflictos con percepción Dermo-Óptica</label>
+                            </li>
+                            <li class="formLi" >
+                                <input id="reiki" type="checkbox" name="reiki" value="seleccionado">
+                                <label for="reiki">Curso de Reiki Usui Tibetano</label>
+                            </li>
+                        </ul>
+                    </div>    
+                    <!-- CONSULTING TEXT AREA -->
+                    <textarea class="boxStyle" name="consulta" cols="30" rows="10" placeholder="Ingrese aquí su consulta" maxlength="500" required></textarea>
+                    <!-- MODALITY SELECTION LIST -->
+                    <h4 class="formH4" >Seleccione la modalidad</h4>
+                    <select class="boxStyle" name="modalidad">
+                        <option value="Presencial">Presencial</option>
+                        <option value="VideoLlamada">Video llamada</option>
+                    </select>
+                    <!-- TERMS & CONDITIONS CHECKBOX AND LINK -->
+                    <div class="formLi">
+                        <input id="terms" type="checkbox" required>
+                        <label for="terms">Acepto los <a href="#" class="termCondCheck">Términos y Condiciones</a></label>
+                    </div>
+                    <!-- BUTTONS -->
+                    <div class="divStyle">
+                        <input type="submit" value="Enviar Formulario" class="button" >
+                        <input type="reset" value="Limpiar Formulario" class="button" >
+                    </div>
+                </form>
+            </section>
+        </main> 
+>>>>>>> modificaciones
         <!-- FOOTER START -->
         <footer>
-            <div class="footerCont">
-                <div class="backNav">
-                    <!-- LINK PARA VOLVER ARRIBA -->
-                    <a href="#Navegador">Volver al Navegador ↑</a>
-                </div>
-                <!-- LINKS A VENTANA NUEVA CON LA INFORMACIÓN CORRESPONDIENTE A MODO DE EJEMPLO -->
-                <div class="cookies">
-                    <a href="#">Política de Cookies</a>
-                </div>
-                <div class="termCond">
-                    <a href="#">Terminos y Condiciones</a>
-                </div>
-                <!-- SOCIAL MEDIA ICONS -->
-                <div class="join">
-                    <p>Unete a la Comunidad</p>
-                </div>
-                <div class="socialCont">
-                    <a href="https://www.linkedin.com/in/claudia-corintio-a02883209/" target="_blank">
-                        <img src="../images/linkedingIcon30x30.png" alt="Linkedin_Logo">
-                    </a>                        
-                    <a href="https://www.instagram.com/claudiacorintio_photography/" target="_blank">
-                        <img src="../images/instagramIcon30x30.png" alt="Instagram_Logo">
-                    </a>                        
-                    <a href="https://www.facebook.com/claudia.corintio" target="_blank">
-                        <img src="../images/facebookIcon30x30.png" alt="Facebook_Logo">
-                    </a>            
-                </div>
-                <div class="copyR">
-                    <p>© 2022 Claudia Corintio</p>
-                </div>
-                <div class="devDiv">
-                    <a href="#">Developed by DevRon</a>
-                </div>
-            </div> 
+            <div class="socialCont">
+                <a href="https://www.linkedin.com/in/claudia-corintio-a02883209/" target="_blank">
+                    <i class="fa-brands fa-linkedin linkIcon"></i>
+                </a>                        
+                <a href="https://www.instagram.com/claudiacorintio_photography/" target="_blank">
+                    <i class="fa-brands fa-instagram-square instaIcon"></i>
+                </a>                        
+                <a href="https://www.facebook.com/claudia.corintio" target="_blank">
+                    <i class="fa-brands fa-facebook-square faceIcon"></i>
+                </a>            
+            </div>
+            <div class="join">
+                <p>Sigueme en Redes</p>
+            </div>
+            <div class="copyR">
+                <p>© 2022 Claudia Corintio</p>
+            </div>
+            <div class="acordContainer">
+                <details>
+                    <summary>Políticas</summary>
+                    <ul>
+                        <li class="mainLi">
+                            <a href="#">Política de Cookies</a>
+                        </li>
+                        <li class="mainLi">
+                            <a href="#">Terminos y Condiciones</a>
+                        </li>
+                        <li class="mainLi devDiv">
+                            <a href="https://github.com/rcharamelo/coderHouseProjects.git" target="_blank">Developed by DevRon</a>
+                        </li>
+                    </ul>
+                </details>
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b00a1fa740.js" crossorigin="anonymous"></script>
     </body>
 </html>

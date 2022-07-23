@@ -10,63 +10,45 @@
         <title>Sobre Claudia</title>    
     </head>
     <body>
-        <div class="grillaGeneral">
-            <!-- HEADER / NAVIGATION BAR -->
-            <header>
-                <nav>
-                    <!-- LOGO & TITLE -->
-                    <span class="logo">
-                        <img src="../images/florLotoIcon-48x48.png" alt="Logo_Lotto_Flower">
-                    </span>
-                    <h1>Claudia Corintio <br> Terapias Alternativas</h1>
-                    <ul>
-                        <li><!-- APLICARLO A MOBILE -->
-                            <a href="../index.html">Inicio</a>
-                        </li>
-                        <li class="active1">
-                            <a href="sobreClaudia.html">Sobre Claudia</a>
-                        </li>
-                        <li>
-                            <a href="servicios.html">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="testimonios.html">Testimonios</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <!-- LANGUAGE SELECTION FLAGS EN FUNCIONAMIENTO SOLO INDEX EL RESTO A MODO DE-->
-                    <span class="lang">
-                        <!-- LINKS DE CAMBIO DE IDIOMA A MODO DE EJEMPLO -->
-                        <a class="active1" href="#">
-                            <img src="../images/SpainFlagIcon16x20.svg" alt="Español">
-                        </a>                        
-                        <a href="#">
-                            <img src="../images/usaFlagIcon16x20.svg" alt="English">
-                        </a>
-                        <a href="#">
-                            <img src="../images/italianFlagIcon16x20.svg" alt="Italian">
-                        </a>                          
-                    </span>                 
-                </nav>
-            </header>   
-            <main  id="Navegador">
-                <section class="mainGridAbout">
-                    <section class="fatherAbout">
-                        <div class="whoIsCont">
-                            <h2>¿Quién es Claudia Corintio?</h2>
-                            <img src="../images/claudiaPicture88x150.jpg" alt="">
+        <!-- HEADER / NAVIGATION BAR -->
+        <header class="navbar-dark bg-dark">
+            <h1>Claudia Corintio Terapias Alternativas</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/florLotoIcon-30x30.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="../index.html">Index</a>
+                            <a class="nav-link active" href="sobreClaudia.html">Sobre Claudia</a>
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                            <a class="nav-link" href="testimonios.html">Testimonios</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </div>
-                        <div class="divUl whoIsUl">
-                            <!-- INTERNAL LINK UNORDERED LIST -->
-                            <ul>
-                                <li>
-                                    <a class="mainLi" href="#procedencia">Mi procedencia</a>
-                                </li>
-                                <li>
-                                    <a class="mainLi" href="#historia">Mi historia</a>
-                                </li>
+                    </div>
+                </div>
+            </nav>
+        </header>   
+        <main>
+            <section class="mainGridAbout">
+                <section class="fatherAbout">
+                    <div class="whoIsCont imgLight">
+                        <h2>¿Quién es Claudia Corintio?</h2>
+                        <img src="../images/claudiaPicture88x150.jpg" alt="Claudia Corintio">
+                    </div>
+                    <div class="divUl whoIsUl">
+                        <!-- INTERNAL LINK UNORDERED LIST -->
+                        <ul>
+                            <li>
+                                <a class="mainLi" href="#procedencia">Mi procedencia</a>
+                            </li>
+                            <li>
+                                <a class="mainLi" href="#historia">Mi historia</a>
+                            </li>
                             <li>
                                 <a class="mainLi" href="#camino">¿Por qué elegí este camino?</a>
                             </li>
@@ -74,88 +56,88 @@
                                 <a class="mainLi" href="#certificaciones">Mis certificaciones</a>
                             </li>
                         </ul>
-                        </div>
-                        <picture class="procedImg">
-                                <source media="(min-width:550px)" srcset="../images/miprocedencia200x200.jpg">
-                                <source media="(min-width:768px)" srcset="../images/miprocedencia250x250.jpg">
-                                <img src="../images/miprocedencia120x120.jpg" alt="ImagenProcedencia">
-                        </picture>
-                        <div class="procedCont">
-                            <h3 class="mainH3" id="procedencia">Mi procedencia</h3>
-                            <p>La biografía es un tipo o subgénero literario-histórico situado dentro de los géneros "memorialísticos", y a su vez integrados en los ensayísticos.Se configura modernamente, sobre todo, con las moralizantes Vidas paralelas de Plutarco y los distintos De viris illustribus y atraviesa la Edad Media característicamente en forma de hagiografía hasta alcanzar la biografía carolingia.
-                            </p>
-                        </div>
-                        <picture class="historyImg">
-                                <source media="(min-width:550px)" srcset="../images/mihistoria200x200.jpg">
-                                <source media="(min-width:768px)" srcset="../images/mihistoria250x250.jpg">
-                                <img src="../images/mihistoria120x120.jpg" alt="ImagenHistoria">
-                        </picture>
-                        <div class="historyCont">
-                            <h3 class="mainH3" id="historia">Mi historia</h3>
-                            <p>Las diferencias entre las biografías son de muy distinto sesgo y originan toda una serie de subgéneros: la biografía autorizada o no autorizada, la vita moralizante grecolatina, la biografía intelectual, el memorial, las vidas de santos, la semblanza, el retrato, las vidas de trovadores provenzales, la autobiografía falsa, la biografía ficticia, el currículum, la biobibliografía, el dossier documental sobre una persona y las prosopografías, repertorios o diccionarios biográficos más o menos generales o especializados.
-                            </p>
-                        </div>
-                        <picture class="pathImg">
-                                <source media="(min-width:550px)" srcset="../images/micamino200x200.jpg">
-                                <source media="(min-width:768px)" srcset="../images/micamino250x250.jpg">
-                                <img src="../images/micamino120x120.jpg" alt="ImagenCamino">
-                        </picture>
-                        <div class="pathCont respWidth">
-                            <h3 class="mainH3" id="camino">¿Por qué elegí este camino?</h3>
-                            <p>Las diferencias entre las biografías son de muy distinto sesgo y originan toda una serie de subgéneros: la biografía autorizada o no autorizada, la vita moralizante grecolatina, la biografía intelectual, el memorial, las vidas de santos, la semblanza, el retrato, las vidas de trovadores provenzales, la autobiografía falsa, la biografía ficticia, el currículum, la biobibliografía, el dossier documental sobre una persona y las prosopografías, repertorios o diccionarios biográficos más o menos generales o especializados.
-                            </p>
-                        </div>
-                        <picture class="certImg">
-                                <source media="(min-width:550px )" srcset="../images/miscertificaciones200x200.jpg">
-                                <source media="(min-width:768px )" srcset="../images/miscertificaciones250x250.jpg">
-                                <img src="../images/miscertificaciones120x120.jpg" alt="ImagenCamino">
-                        </picture>
-                        <div class="certCont">
-                            <h3 class="mainH3" id="certificaciones">Mis certificaciones</h3>
-                            <p>La articulación de autoría inversa a la de biografía es la de autobiografía (con subgéneros tan importantes como las autobiografías de esclavos o las autobiografías de soldados españoles del Siglo de Oro), las memorias, el diario personal o confesión, el epistolario, el diario simple o dietario, el libro de viajes, este último ambivalente entre biografía y autobiografía. Biografía y autobiografía coinciden en ser géneros ensayísticos memorialísticos.
-                            </p>
-                        </div>
-                    </section>
+                    </div>
+                    <!-- TANTO LOS TEXTOS COMO LAS IMAGENES SON A MODO DE EJEMPLO -->
+                    <picture class="procedImg imgLight">
+                            <source media="(min-width:550px)" srcset="../images/miprocedencia200x200.jpg">
+                            <source media="(min-width:768px)" srcset="../images/miprocedencia250x250.jpg">
+                            <img src="../images/miprocedencia120x120.jpg" alt="ImagenProcedencia">
+                    </picture>
+                    <div class="procedCont">
+                        <h3 class="mainH3" id="procedencia">Mi procedencia</h3>
+                        <p>La biografía es un tipo o subgénero literario-histórico situado dentro de los géneros "memorialísticos", y a su vez integrados en los ensayísticos.Se configura modernamente, sobre todo, con las moralizantes Vidas paralelas de Plutarco y los distintos De viris illustribus y atraviesa la Edad Media característicamente en forma de hagiografía hasta alcanzar la biografía carolingia.
+                        </p>
+                    </div>
+                    <picture class="historyImg imgLight">
+                            <source media="(min-width:550px)" srcset="../images/mihistoria200x200.jpg">
+                            <source media="(min-width:768px)" srcset="../images/mihistoria250x250.jpg">
+                            <img src="../images/mihistoria120x120.jpg" alt="ImagenHistoria">
+                    </picture>
+                    <div class="historyCont">
+                        <h3 class="mainH3" id="historia">Mi historia</h3>
+                        <p>Las diferencias entre las biografías son de muy distinto sesgo y originan toda una serie de subgéneros: la biografía autorizada o no autorizada, la vita moralizante grecolatina, la biografía intelectual, el memorial, las vidas de santos, la semblanza, el retrato, las vidas de trovadores provenzales, la autobiografía falsa, la biografía ficticia, el currículum, la biobibliografía, el dossier documental sobre una persona y las prosopografías, repertorios o diccionarios biográficos más o menos generales o especializados.
+                        </p>
+                    </div>
+                    <picture class="pathImg imgLight">
+                            <source media="(min-width:550px)" srcset="../images/micamino200x200.jpg">
+                            <source media="(min-width:768px)" srcset="../images/micamino250x250.jpg">
+                            <img src="../images/micamino120x120.jpg" alt="ImagenCamino">
+                    </picture>
+                    <div class="pathCont respWidth">
+                        <h3 class="mainH3" id="camino">¿Por qué elegí este camino?</h3>
+                        <p>Las diferencias entre las biografías son de muy distinto sesgo y originan toda una serie de subgéneros: la biografía autorizada o no autorizada, la vita moralizante grecolatina, la biografía intelectual, el memorial, las vidas de santos, la semblanza, el retrato, las vidas de trovadores provenzales, la autobiografía falsa, la biografía ficticia, el currículum, la biobibliografía, el dossier documental sobre una persona y las prosopografías, repertorios o diccionarios biográficos más o menos generales o especializados.
+                        </p>
+                    </div>
+                    <picture class="certImg imgLight">
+                            <source media="(min-width:550px )" srcset="../images/miscertificaciones200x200.jpg">
+                            <source media="(min-width:768px )" srcset="../images/miscertificaciones250x250.jpg">
+                            <img src="../images/miscertificaciones120x120.jpg" alt="ImagenCamino">
+                    </picture>
+                    <div class="certCont">
+                        <h3 class="mainH3" id="certificaciones">Mis certificaciones</h3>
+                        <p>La articulación de autoría inversa a la de biografía es la de autobiografía (con subgéneros tan importantes como las autobiografías de esclavos o las autobiografías de soldados españoles del Siglo de Oro), las memorias, el diario personal o confesión, el epistolario, el diario simple o dietario, el libro de viajes, este último ambivalente entre biografía y autobiografía. Biografía y autobiografía coinciden en ser géneros ensayísticos memorialísticos.
+                        </p>
+                    </div>
                 </section>
-            </main>
-            <!-- FOOTER START -->
-            <footer>
-                <div class="footerCont">
-                    <div class="backNav">
-                        <!-- LINK PARA VOLVER ARRIBA -->
-                        <a href="#Navegador">Volver al Navegador ↑</a>
-                    </div>
-                    <!-- LINKS A VENTANA NUEVA CON LA INFORMACIÓN CORRESPONDIENTE A MODO DE EJEMPLO -->
-                    <div class="cookies">
-                        <a href="#">Política de Cookies</a>
-                    </div>
-                    <div class="termCond">
-                        <a href="#">Terminos y Condiciones</a>
-                    </div>
-                    <!-- SOCIAL MEDIA ICONS -->
-                    <div class="join">
-                        <p>Unete a la Comunidad</p>
-                    </div>
-                    <div class="socialCont">
-                        <a href="https://www.linkedin.com/in/claudia-corintio-a02883209/" target="_blank">
-                            <img src="../images/linkedingIcon30x30.png" alt="Linkedin_Logo">
-                        </a>                        
-                        <a href="https://www.instagram.com/claudiacorintio_photography/" target="_blank">
-                            <img src="../images/instagramIcon30x30.png" alt="Instagram_Logo">
-                        </a>                        
-                        <a href="https://www.facebook.com/claudia.corintio" target="_blank">
-                            <img src="../images/facebookIcon30x30.png" alt="Facebook_Logo">
-                        </a>            
-                    </div>
-                    <div class="copyR">
-                        <p>© 2022 Claudia Corintio</p>
-                    </div>
-                    <div class="devDiv">
-                        <a href="#">Developed by DevRon</a>
-                    </div>
-                </div> 
-            </footer>
-        </div>
+            </section>
+        </main>
+        <!-- FOOTER START -->
+        <footer>
+            <div class="socialCont">
+                <a href="https://www.linkedin.com/in/claudia-corintio-a02883209/" target="_blank">
+                    <i class="fa-brands fa-linkedin linkIcon"></i>
+                </a>                        
+                <a href="https://www.instagram.com/claudiacorintio_photography/" target="_blank">
+                    <i class="fa-brands fa-instagram-square instaIcon"></i>
+                </a>                        
+                <a href="https://www.facebook.com/claudia.corintio" target="_blank">
+                    <i class="fa-brands fa-facebook-square faceIcon"></i>
+                </a>            
+            </div>
+            <div class="join">
+                <p>Sigueme en Redes</p>
+            </div>
+            <div class="copyR">
+                <p>© 2022 Claudia Corintio</p>
+            </div>
+            <div class="acordContainer">
+                <details>
+                    <summary>Políticas</summary>
+                    <ul>
+                        <li class="mainLi">
+                            <a href="#">Política de Cookies</a>
+                        </li>
+                        <li class="mainLi">
+                            <a href="#">Terminos y Condiciones</a>
+                        </li>
+                        <li class="mainLi devDiv">
+                            <a href="https://github.com/rcharamelo/coderHouseProjects.git" target="_blank">Developed by DevRon</a>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b00a1fa740.js" crossorigin="anonymous"></script>
     </body>
 </html>

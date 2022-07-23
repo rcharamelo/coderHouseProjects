@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poiret+One&display=swap');
 /* font-family: 'Oswald', sans-serif;
-font-family: 'Poiret One', cursive; */
+font-family: 'Poiret One', cursive; 
+font-family: 'Dancing Script', cursive;*/
+
 *{
     margin: 0;
     padding: 0;
@@ -18,63 +21,45 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    display: flex;
-    flex-direction: column;
     min-height: 100%;
 }
 nav a{
     text-decoration: none;
     color: white;
     font-size: 1.8rem;
+    margin: 0.62rem;
 }
 /* HEADER GENERAL STYLE */
 header{
-    background-color: rgba(51, 51, 51, 0.9);
+    opacity: 0.8;
     position: sticky;
     width: 100%;
     top: 0;
     border: 1px solid black;
-    grid-area: header;
     z-index: 1;
 }
 /* NAV STYLE */
-nav ul li{
-    list-style-type: none;
-}
 nav{
     width: 85%;
-    grid-area: nav;
-    display: flex;
+    background-color: rgba(51, 51, 51, 0.9);
     margin: 0 auto;
-    display: grid;
-    grid-template-areas: 
-    "logo title lang"
-    "logo title navMenu";
-    z-index: 1;
-}
-nav ul{
-    grid-area: navMenu;
 }
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    font-family: 'Dancing Script', cursive;
 }
 /* MAIN STYLE */
 main{
     position: relative;
-    margin: 5% auto;
+    margin: 2% auto;
     padding: 5%;
     width: 85%;
     background-color: rgba(255, 255, 255,0.6); 
     background-repeat:  no-repeat; /* PARALLAX EFFECT */
     height: max-content;  /* PARALLAX EFFECT */
     box-shadow: 7px 13px 37px #000;
-    grid-area: main;
 }
 /* MAIN CONTENT STYLE */
 main h2{
@@ -104,88 +89,69 @@ footer{
     border: 1px solid black;
     margin-bottom: 0;
     padding: 0.31rem;
-    grid-area: footer;
     font-size: 1.2rem;
+    display: grid;
+    grid-template-areas: 
+    "socialCont"
+    "join"
+    "acordContainer"
+    "copyR";
 }
 footer a, footer p{
     color: white;
     text-decoration: none;
+    padding: 10px;
 }
-/* HEADER GRID CONFIGURATION */
-.logo{
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lang{
-    grid-area: lang;
-    display: flex;
-    justify-content: flex-end;
+.linkIcon{
+    color: #0077b5;
+    font-size: 2em;
     padding: 0.31rem;
 }
-.lang img{
-    margin: 0.62rem;
+.faceIcon{
+    color: #4267b2;
+    font-size: 2em;
 }
-.itaFlag{
-    background-color: #fff;
+.instaIcon{
+    color: #fe0076;
+    font-size: 2em;
 }
-.lang a{
-    display: inline-block;
+.acordContainer{
+    width: max-content;
+    margin: 0 auto;
+    grid-area: acordContainer;
+}
+.acordContainer ul{
+    list-style-type: none;
+    padding: 1rem;
+}
+.acordContainer li{
+    padding: 0.5rem;
+}
+/* FOOTER ACORDEON CONFIG */
+details{
+    cursor: pointer;
+}
+summary{
+    color: white;
+    list-style: none;
+}
+summary::after{
+    content: '+';
+    padding-left: 1rem;
+}
+details[open] summary::after{
+    content: '-';
 }
 /* FOOTER GRID CONFIG */
-.footerCont{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    "backNav  cookies socialCont"
-    "termCond copyR    socialCont"
-    "devDiv   devDiv   join";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 0.5fr;
-    align-items: center;
-    font-size: 1.6rem;
-}
-.backNav{
-    grid-area: backNav;
-}
-.cookies{
-    grid-area: cookies;
-}
-.cookies a{
-    align-items: center;
-}
-.termCond{
-    grid-area: termCond;
+.socialCont{
+    grid-area: socialCont;
+    display: block;
 }
 .join{
     grid-area: join;
 }
-.socialCont{
-    grid-area: socialCont;
-    display: flex;
-    flex-direction: column;
-}
-.socialCont img{
-    margin: 0.31rem;
-}
 .copyR{
     grid-area: copyR;
-}
-.devDiv{
-    grid-area: devDiv;
-}
-.grillaGeneral{
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    margin-bottom: 1,5em;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
-    gap: 0.31rem;
 }
 /* SOBRE CLAUDIA UL STYLES */
 .divUl ul{
@@ -198,6 +164,9 @@ footer a, footer p{
     width: max-content;
     box-shadow: 7px 13px 37px #000;
 }
+/* .whoIsUl a{
+    font-size: 1.4rem;
+} */
 .mainLi , .mainLi a{
     text-decoration: none;
     color: white;
@@ -224,7 +193,6 @@ footer a, footer p{
 }
 .whoIsUl{
     grid-area: whoIsUl;
-    font-size: 1.8rem;
 }
 .whoIsCont{
     grid-area: whoIsCont;
@@ -253,61 +221,44 @@ footer a, footer p{
 .certCont{
     grid-area: certCont;
 }
+/* SERVICIOS GRI CONFIG */
+.servicesFather{
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    grid-template-areas: 
+    "servicesUl"
+    "therapyImg"    
+    "therapyCont"
+    "decoBioImg"
+    "decoBioCont"   
+    "decoArbImg"
+    "decoArbCont"
+    "conflictImg"
+    "conflictCont"  
+    "reikiImg"
+    "reikiCont";
+    align-items: center;
+    justify-content: center;
+}
 /* MEDIA QUERY PROPERTIES */
 @media (min-width: 550px) {
-    .grillaGeneral{
-        grid-template-areas: 
-        "header header"
-        "nav    nav"
-        "main    main"
-        "footer footer";
-        grid-template-columns: auto auto;
+    h1{
+        font-size: 2.5rem;
     }
-
-    .footerCont{
-    margin: 0;
-    grid-template-areas: 
-    "backNav  cookies socialCont"
-    "termCond copyR    join"
-    "devDiv   devDiv   devDiv";
-    align-items: center;
-    }
-    .socialCont{
-        display: inline-block;
-    }
-        /* ABOUT CLAUDIA MEDIA QUERY */
-    .fatherAbout{
+    footer{
         display: grid;
         grid-template-areas: 
-        "whoIsUl      whoIsCont"
-        "procedImg    procedCont"
-        "historyCont  historyImg"
-        "pathImg      pathCont"
-        "certCont     certImg";
-        gap: 1rem;
-        align-items: center;
+        "socialCont  copyR"
+        "join        acordContainer";
     }
-    /* SERVICES MEDIA QUERY */
-    .servicesFather{
-        display: grid;
-        grid-template-areas: 
-        "servicesUl    servicesUl"
-        "therapyImg    therapyCont"
-        "decoBioCont   decoBioImg"
-        "decoArbImg    decoArbCont"
-        "conflictCont  conflictImg"
-        "reikiImg      reikiCont";
-        align-items: center;
-        justify-content: center;
+    .whoIsUl a, .servicesUl a{
+        font-size: 1.8rem;
     }
-}
+} 
 @media (min-width:768px) {
-    .grillaGeneral{
-        grid-template-areas: 
-        "header header   header"
-        "nav    nav      nav"
-        "main    main    main"
-        "footer footer   footer";
+    .whoIsUl a, .servicesUl a{
+        font-size: 2rem;
     }
     /* ABOUT CLAUDIA MEDIA QUERY *****/
     .fatherAbout{
@@ -341,62 +292,97 @@ footer a, footer p{
     /* TESTIMONY MEDIA QUERY */
 }
 @media (min-width:1024px) {
-        /* TESTIMONY MEDIA QUERY */
-    /* LINKS HOVER EFFECT *******/
-    nav ul{
-        display: flex;
-        justify-content: space-between;
+    h1{
+        font-size: 3rem;
     }
+    .instaIcon, .faceIcon, .linkIcon{
+        font-size: 3em;
+    }   
+    footer{
+            font-size: 1.2rem;
+            display: grid;
+            justify-content: space-evenly;
+            grid-template-areas: 
+            "join socialCont copyR acordContainer";
+        }
+        .join, .copyR, summary{
+            font-size: 1.8rem;
+        }
+    /* LINKS HOVER EFFECT *******/
     nav a:hover:not(.active){
-        background-color: rgba(255, 255, 255,0.5);
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         padding: 6px 8px; 
         transition: 0.5s;
         border-radius: 5px;
     }
-    .active1 {
-        background-color: rgba(255, 255, 255,0.5);
+    .active {
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         border-radius: 5px;
         padding: 6px 8px;
         text-transform: uppercase;
     }
     .divUl a:hover{
-        background-color: rgba(255, 255, 255,0.6);
+        color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         transition: 0.5s;
         border-radius: 5px;
         padding: 4px 8px;
     }
     footer a:hover{
-        background-color: rgba(255, 255, 255,0.6);
+        color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         transition: 0.5s;
         border-radius: 5px;
-        padding: 6px 8px;
+        padding: 8px 10px;
+        font-weight: bolder;
+    }
+    .socialCont a:hover{
+        color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s;
+        border-radius: 5px;
+        padding: 12px 12px;
     }
     .devDiv a:hover{
-        margin-bottom: 5px;
         background-color: rgba(255, 165, 0, 0.8);
-        padding: 5px 5px;
+        color: purple;
+        padding: 8px 10px;
+        font-weight: bolder;
     }
     .divUl{
         font-size: 2rem;
     }
     /* FORM A HOVER **********/
     input:hover{
-        background-color: rgba(255, 255, 255,0.6);
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         padding: 8px 12px; 
         transition: 0.5s;
     }
     textarea:hover{
-        background-color: rgba(255, 255, 255,0.6);
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        padding: 8px 12px; 
+        transition: 0.5s; 
+    }
+    select:hover{
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         padding: 8px 12px; 
         transition: 0.5s; 
     }
     .termCondCheck:hover{
         text-decoration: underline;
+        color: orange;
     }
     .imgLight img:hover{
         box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         transition: all 2s;
         transform: scale(110%);
+    }
+    summary:hover{
+        color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s;
+        border-radius: 5px;
+        padding: 4px 8px;
     }
 }
 /* SERVICES STYLES & GRID  **********/
@@ -423,7 +409,6 @@ footer a, footer p{
     "reikiCont";
     gap: 10px;
     align-items: center;
-    grid-template-columns: 1fr;
 }
 .mainGridServices ul{
     grid-area: servicesUl;
@@ -431,9 +416,10 @@ footer a, footer p{
     flex-direction: column;
 }
 .servicesUl{
-    margin: 0 auto;
+    width: 100%;
+    margin: 1.2rem auto;
     grid-area: servicesUl;
-    margin: 1.2rem;
+    overflow: hidden;
 }
 .therapyImg{
     grid-area: therapyImg;
@@ -465,9 +451,9 @@ footer a, footer p{
 .reikiCont{
     grid-area: reikiCont;
 }
-/* TESTIMONY STYLES */
+/* TESTIMONY STYLES ****************************/
 .testimTitle{
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
 }
 .container{
@@ -521,7 +507,7 @@ footer a, footer p{
     width: 15   px;
     height: 15px;
 }
-/* CONTACT FORM STYLE *****************/
+/* CONTACT FORM STYLES *****************/
 .contactForm {
     width: 100%;
     max-width: 400px;
@@ -529,17 +515,16 @@ footer a, footer p{
     padding: 1.88rem;
     margin: 0 auto;
     top: 0.62rem;
-    border-radius: 0.62rem;    
+    border-radius: 10px;    
     border: 1px solid black;
     position: relative;
     box-shadow: 7px 13px 37px #000;
     }
-/**** FORM TITLE STYLE ****/
 .formTitle {
     color: white;
     font-size: 2.2rem;
     margin: 0px auto;
-    padding: 0.62rem;
+    padding: 1rem;
 }
 .divStyle {
     margin: 0 auto;
@@ -547,16 +532,28 @@ footer a, footer p{
     padding: 0.62rem;
     width: 100%;
 }
-/* BOXES STYLE */
+/* BOXES STYLES */
 .boxStyle {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.31rem;
-    margin-left: 0 auto;
+    padding: 0.62rem;
     border-radius: 0.31rem;
     color: white;
+    font-size: 1.6rem;
+    margin: 0.31rem 0;
 }
-/* FORM LIST STYLE */
+/* INPUTS WEBKIT CONFIG */
+input::placeholder{
+    color: white;
+}
+::-webkit-input-placeholder { color: white; } /* WebKit */
+::-moz-placeholder { color: white;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* FORM LIST STYLES */
 .formLi {
     list-style: none;
     color: white;
@@ -564,6 +561,7 @@ footer a, footer p{
     padding: 5px 2px 5px;
     font-size: 1.6rem;
 }
+
 .termCondCheck {
     text-decoration: none;
     font-size: 1.6rem;
@@ -576,13 +574,15 @@ footer a, footer p{
     margin: 0 auto;
     padding: 0.62rem;
 }
-/* BUTTON STYLE */
+/* BUTTONS STYLES */
 .button {
     color: white;
+    font-size: 1.6rem;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 8px 12px;
     border-radius: 5px;
     border: 1px solid black;
     margin: 0.31rem 1.2rem;
+    width: 100%;
 }
 
