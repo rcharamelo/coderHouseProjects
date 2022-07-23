@@ -164,6 +164,9 @@ details[open] summary::after{
     width: max-content;
     box-shadow: 7px 13px 37px #000;
 }
+/* .whoIsUl a{
+    font-size: 1.4rem;
+} */
 .mainLi , .mainLi a{
     text-decoration: none;
     color: white;
@@ -190,7 +193,6 @@ details[open] summary::after{
 }
 .whoIsUl{
     grid-area: whoIsUl;
-    font-size: 1.8rem;
 }
 .whoIsCont{
     grid-area: whoIsCont;
@@ -250,8 +252,14 @@ details[open] summary::after{
         "socialCont  copyR"
         "join        acordContainer";
     }
+    .whoIsUl a, .servicesUl a{
+        font-size: 1.8rem;
+    }
 } 
 @media (min-width:768px) {
+    .whoIsUl a, .servicesUl a{
+        font-size: 2rem;
+    }
     /* ABOUT CLAUDIA MEDIA QUERY *****/
     .fatherAbout{
         width: 100%;
@@ -351,12 +359,18 @@ details[open] summary::after{
         transition: 0.5s;
     }
     textarea:hover{
-        background-color: rgba(255, 255, 255,0.6);
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        padding: 8px 12px; 
+        transition: 0.5s; 
+    }
+    select:hover{
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
         padding: 8px 12px; 
         transition: 0.5s; 
     }
     .termCondCheck:hover{
         text-decoration: underline;
+        color: orange;
     }
     .imgLight img:hover{
         box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
@@ -395,7 +409,6 @@ details[open] summary::after{
     "reikiCont";
     gap: 10px;
     align-items: center;
-    /* grid-template-columns: 1fr; */
 }
 .mainGridServices ul{
     grid-area: servicesUl;
@@ -502,7 +515,7 @@ details[open] summary::after{
     padding: 1.88rem;
     margin: 0 auto;
     top: 0.62rem;
-    border-radius: 0.62rem;    
+    border-radius: 10px;    
     border: 1px solid black;
     position: relative;
     box-shadow: 7px 13px 37px #000;
@@ -511,7 +524,7 @@ details[open] summary::after{
     color: white;
     font-size: 2.2rem;
     margin: 0px auto;
-    padding: 0.62rem;
+    padding: 1rem;
 }
 .divStyle {
     margin: 0 auto;
@@ -523,10 +536,22 @@ details[open] summary::after{
 .boxStyle {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.31rem;
-    margin-left: 0 auto;
+    padding: 0.62rem;
     border-radius: 0.31rem;
     color: white;
+    font-size: 1.6rem;
+    margin: 0.31rem 0;
+}
+/* INPUTS WEBKIT CONFIG */
+input::placeholder{
+    color: white;
+}
+::-webkit-input-placeholder { color: white; } /* WebKit */
+::-moz-placeholder { color: white;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 /* FORM LIST STYLES */
 .formLi {
@@ -536,6 +561,7 @@ details[open] summary::after{
     padding: 5px 2px 5px;
     font-size: 1.6rem;
 }
+
 .termCondCheck {
     text-decoration: none;
     font-size: 1.6rem;
@@ -551,10 +577,12 @@ details[open] summary::after{
 /* BUTTONS STYLES */
 .button {
     color: white;
+    font-size: 1.6rem;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 8px 12px;
     border-radius: 5px;
     border: 1px solid black;
     margin: 0.31rem 1.2rem;
+    width: 100%;
 }
 
