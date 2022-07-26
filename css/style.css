@@ -525,6 +525,7 @@ details[open] summary::after{
     font-size: 2.2rem;
     margin: 0px auto;
     padding: 1rem;
+    font-weight: bold;
 }
 .divStyle {
     margin: 0 auto;
@@ -542,6 +543,7 @@ details[open] summary::after{
     font-size: 1.6rem;
     margin: 0.31rem 0;
 }
+
 /* INPUTS WEBKIT CONFIG */
 input::placeholder{
     color: white;
@@ -557,11 +559,9 @@ input::-webkit-inner-spin-button {
 .formLi {
     list-style: none;
     color: white;
-    text-align: justify;
-    padding: 5px 2px 5px;
-    font-size: 1.6rem;
+    text-align: start;
+    font-size: 1.5rem;
 }
-
 .termCondCheck {
     text-decoration: none;
     font-size: 1.6rem;
