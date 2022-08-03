@@ -1,0 +1,149 @@
+@media (min-width: 550px) {
+    header{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    footer{
+        display: grid;
+        grid-template-areas: 
+        "socialCont  copyR"
+        "join        acordContainer";
+    }
+    .whoIsUl a{
+        font-size: 1.8rem;
+    }
+    .servicesUl a{
+        font-size: 1.8rem;
+    }
+} 
+@media (min-width:768px){
+    .whoIsUl a, .servicesUl a{
+        font-size: 2rem;
+    }
+    /* ABOUT CLAUDIA MEDIA QUERY *****/
+    .fatherAbout{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "whoIsUl      whoIsCont"
+        "procedImg    procedCont"
+        "historyCont  historyImg"
+        "pathImg      pathCont"
+        "certCont     certImg";
+        gap: 5px;
+        align-items: center;
+    }
+    section  picture img{
+        height: 250px;
+    }
+    /* SERVICES MEDIA QUERY *******/
+    .servicesFather{
+        display: grid;
+        margin: 0 auto;
+        grid-template-areas: 
+        "servicesUl    servicesUl"
+        "therapyImg    therapyCont"
+        "decoBioCont   decoBioImg"
+        "decoArbImg    decoArbCont"
+        "conflictCont  conflictImg"
+        "reikiImg      reikiCont";
+        align-items: center;
+    }
+}
+@media (min-width:1024px){
+    header{
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .instaIcon, .faceIcon, .linkIcon{
+        font-size: 3em;
+    }   
+    footer{
+        font-size: 1.2rem;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-areas: 
+        "join socialCont copyR acordContainer";
+        &a:hover{
+            box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+            transition: 0.5s;
+            border-radius: 5px;
+            padding: 4px 8px;
+        }
+    }
+    .join, .copyR, summary{
+        font-size: 1.8rem;
+    }
+    /* LINKS HOVER EFFECT *******/
+    nav a:hover:not(.active){
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        padding: 6px 8px; 
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+    .active {
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        border-radius: 5px;
+        padding: 6px 8px;
+        text-transform: uppercase;
+    }
+    .divUl{
+        font-size: 2rem;
+        a:hover{
+            color: #fff;
+            box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+            transition: 0.5s;
+            border-radius: 5px;
+            padding: 4px 8px;
+        }
+    }
+    .socialCont a:hover{
+        color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s;
+        border-radius: 5px;
+        padding: 12px 12px;
+    }
+    .devDiv a:hover{
+        background-color: rgba(255, 165, 0, 0.8);
+        color: purple;
+        padding: 8px 10px;
+        font-weight: bolder;
+    }
+    /* FORM A HOVER **********/
+    input:hover{
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s;
+    }
+    textarea:hover{
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s; 
+    }
+    select:hover{
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s; 
+    }
+    .termCondCheck:hover{
+        text-decoration: underline;
+        color: orange;
+    }
+    .imgLight img:hover{
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: all 2s;
+        transform: scale(110%);
+    }
+    summary:hover{
+        color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        transition: 0.5s;
+        border-radius: 5px;
+        padding: 4px 8px;
+        ul{
+            a{
+                color: $font-principal;
+            }
+        }
+    }
+}

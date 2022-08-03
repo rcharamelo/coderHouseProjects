@@ -1,0 +1,49 @@
+/* SOBRE CLAUDIA GRID CONFIG */
+.fatherAbout{
+    display: grid;
+    grid-template-areas: 
+    "whoIsCont"
+    "whoIsUl"
+    "procedImg"
+    "procedCont"
+    "historyImg"
+    "historyCont"
+    "pathImg"
+    "pathCont"
+    "certImg"
+    "certCont";
+    gap: 1rem;
+}
+.mainGridAbout img{
+    box-shadow: 7px 13px 37px #000;
+}
+.whoIsUl{
+    grid-area: whoIsUl;
+}
+.whoIsCont{
+    grid-area: whoIsCont;
+}
+.procedImg{
+    grid-area: procedImg;
+}
+.procedCont{
+    grid-area: procedCont;
+}
+.historyImg{
+    grid-area: historyImg;
+}
+.historyCont{
+    grid-area: historyCont;
+}
+.pathImg{
+    grid-area: pathImg;
+}
+.pathCont{
+    grid-area: pathCont;
+}
+.certImg{
+    grid-area: certImg;
+}
+.certCont{
+    grid-area: certCont;
+}
