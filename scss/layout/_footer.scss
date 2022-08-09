@@ -11,11 +11,10 @@ footer{
     "join"
     "acordContainer"
     "copyR";
-
         a{
             color: $font-principal;
-    text-decoration: none;
-    padding: 10px;
+            text-decoration: none;
+            padding: 10px;
         }
         p{
             @extend a;
