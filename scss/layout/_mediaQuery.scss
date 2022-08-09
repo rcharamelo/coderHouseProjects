@@ -67,9 +67,7 @@
         grid-template-areas: 
         "join socialCont copyR acordContainer";
         &a:hover{
-            box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-            transition: 0.5s;
-            border-radius: 5px;
+            @include box-light-hover;
             padding: 4px 8px;
         }
     }
@@ -78,32 +76,23 @@
     }
     /* LINKS HOVER EFFECT *******/
     nav a:hover:not(.active){
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-        padding: 6px 8px; 
-        transition: 0.5s;
-        border-radius: 5px;
+        @include box-light-hover;
     }
     .active {
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-        border-radius: 5px;
-        padding: 6px 8px;
+        @include box-light-hover;
         text-transform: uppercase;
     }
     .divUl{
         font-size: 2rem;
         a:hover{
+            @include box-light-hover;
             color: #fff;
-            box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-            transition: 0.5s;
-            border-radius: 5px;
             padding: 4px 8px;
         }
     }
     .socialCont a:hover{
         color: #fff;
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-        transition: 0.5s;
-        border-radius: 5px;
+        @include box-light-hover;
         padding: 12px 12px;
     }
     .devDiv a:hover{
@@ -111,39 +100,38 @@
         color: purple;
         padding: 8px 10px;
         font-weight: bolder;
+        border-radius: 5px;
     }
     /* FORM A HOVER **********/
     input:hover{
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-        transition: 0.5s;
+        @include box-light-hover-noPadding;
     }
     textarea:hover{
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-        transition: 0.5s; 
+        @include box-light-hover-noPadding;
     }
     select:hover{
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-        transition: 0.5s; 
+        @include box-light-hover-noPadding;
     }
     .termCondCheck:hover{
         text-decoration: underline;
         color: orange;
     }
     .imgLight img:hover{
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+        box-shadow: $box-light;
         transition: all 2s;
         transform: scale(110%);
     }
     summary:hover{
         color: #fff;
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-        transition: 0.5s;
-        border-radius: 5px;
+        @include box-light-hover;
         padding: 4px 8px;
-        ul{
+    }
+    .mainLi{
             a{
                 color: $font-principal;
+                &:hover{
+                    @include box-light-hover;
+                }
             }
         }
     }
-}

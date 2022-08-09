@@ -1,0 +1,14 @@
+@mixin box-light-hover {
+    box-shadow: $box-light;
+    padding: 6px 8px; 
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+@mixin box-light-hover-noPadding {
+    box-shadow:$box-light;
+    transition: 0.5s;    
+}
+@mixin hConfig {
+    font-weight: bolder;
+    padding: 0.62rem;
+}

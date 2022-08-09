@@ -11,8 +11,8 @@
     height: 300px;
     display: block;
     text-align: center;
-    padding: 10% 5%;
-    margin-top: 2%;
+    padding: 10% 0%;
+    margin: 2% 2%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border-radius: 15px;
@@ -22,6 +22,9 @@
         letter-spacing: 2px;
         margin-top: 30%;
         margin: 20% auto 0;
+    }
+    p{
+        font-size: 2rem;
     }
 }
 .single-box{
@@ -34,7 +37,7 @@
     overflow: hidden;
     top: 7em;
     border-radius: 50%;
-    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    box-shadow: $box-light;
     margin: 0 auto;
     img{
         width: 100%;
