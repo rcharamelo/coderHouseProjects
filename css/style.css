@@ -251,12 +251,12 @@ details {
   display: block;
   text-align: center;
   padding: 10% 0%;
-  margin: 2% 2%;
+  margin: 1% 1%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 15px; }
   .img-text h2 {
-    font-size: 2.5em;
+    font-size: 2.4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 30%;
@@ -272,7 +272,7 @@ details {
   width: 150px;
   height: 150px;
   overflow: hidden;
-  top: 7em;
+  top: 8em;
   border-radius: 50%;
   box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
   margin: 0 auto; }
