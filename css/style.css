@@ -34,7 +34,7 @@ header {
     margin: 0 auto;
     font-family: 'Dancing Script', cursive; }
   header nav {
-    width: 85%;
+    width: 100%;
     background-color: rgba(51, 51, 51, 0.9);
     margin: 0 auto; }
     header nav a, header nav footer p, footer header nav p {
