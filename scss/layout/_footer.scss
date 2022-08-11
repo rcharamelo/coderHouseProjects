@@ -1,9 +1,9 @@
 footer{
     background-color: $background-rgba-dark;
     width: 100%;
-    border: 1px solid black;
-    margin-bottom: 0;
-    padding: 0.31rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.62rem;
     font-size: 1.2rem;
     display: grid;
     grid-template-areas: 
@@ -33,7 +33,7 @@ footer{
     font-size: 2em;
 }
 .acordContainer{
-    width: max-content;
+    width: 200px;
     margin: 0 auto;
     grid-area: acordContainer;
     padding: 4px 8px;
