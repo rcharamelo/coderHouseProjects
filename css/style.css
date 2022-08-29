@@ -196,10 +196,6 @@ details {
   .mainGridServices img {
     box-shadow: 7px 13px 37px #000;
     margin: 10px; }
-  .mainGridServices ul {
-    grid-area: servicesUl;
-    display: flex;
-    flex-direction: column; }
 
 .therapyImg {
   grid-area: therapyImg; }
@@ -234,8 +230,10 @@ details {
 .servicesUl {
   width: 100%;
   margin: 1.2rem auto;
-  grid-area: servicesUl;
-  overflow: hidden; }
+  grid-area: servicesUl; }
+
+.ulContain {
+  display: flex; }
 
 /* TESTIMONY STYLES */
 .testimTitle {
@@ -295,13 +293,16 @@ details {
     height: 15px; }
 
 /* CONTACT FORM STYLES *****************/
+.father {
+  display: flex; }
+
 .contactForm {
   width: 100%;
   max-width: 400px;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 1.88rem;
+  padding: 4em;
   margin: 0 auto;
-  top: 0.62rem;
+  top: 2em;
   border-radius: 10px;
   border: 1px solid black;
   position: relative;
@@ -324,7 +325,7 @@ details {
 .boxStyle {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 0.62rem 0;
+  padding: 0.62rem;
   border-radius: 0.31rem;
   color: white;
   font-size: 1.6rem;
@@ -355,8 +356,9 @@ input::-webkit-inner-spin-button {
 
 .termCondCheck {
   text-decoration: none;
-  font-size: 1.6rem;
-  color: white; }
+  font-size: 1.5rem;
+  color: white;
+  text-align: start; }
 
 /* H4 STYLE */
 .formH4 {

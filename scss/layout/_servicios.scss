@@ -21,11 +21,6 @@
         box-shadow: 7px 13px 37px #000;
         margin: 10px;
     }
-    ul{
-        grid-area: servicesUl;
-        display: flex;
-        flex-direction: column;
-    }
 }
 .therapyImg{
     grid-area: therapyImg;
@@ -61,5 +56,7 @@
     width: 100%;
     margin: 1.2rem auto;
     grid-area: servicesUl;
-    overflow: hidden;
+}
+.ulContain{
+    display: flex;
 }
