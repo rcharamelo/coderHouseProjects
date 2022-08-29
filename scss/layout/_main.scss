@@ -1,0 +1,48 @@
+main{
+    position: relative;
+    margin: 2% auto;
+    padding: 5%;
+    width: 85%;
+    background-color: $backgroud-rgba-light; 
+    background-repeat:  no-repeat; /* PARALLAX EFFECT */
+    height: max-content;  /* PARALLAX EFFECT */
+    box-shadow: $box-shadow;
+    h2{
+        @include hConfig;
+        font-size: $font-size-h2;
+        margin: 0.62rem auto;
+    }
+    h3{
+        @include hConfig;
+        font-size: $font-size-h3;
+        margin: 0 auto;
+    }
+    p{
+        text-align: justify;
+        padding:1% 2%;
+        margin: 1% 2%;
+        position: relative;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .main, .servicesUl, .whoIsUl{
+        ul{
+            list-style-type: none;
+            width: 100%;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1.25rem;
+            border-radius: 0.8rem;
+            width: max-content;
+            box-shadow: $box-shadow;
+            a{
+                text-decoration: none;
+                color: $font-principal;
+                font-size: 1.6rem;
+            }
+        } 
+        }
+    .servicesFather{
+        overflow: hidden;
+    }
+}

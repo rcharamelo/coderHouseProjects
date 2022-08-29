@@ -1,0 +1,62 @@
+/* SERVICIOS GRI CONFIG */
+.mainGridServices{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "servicesUl"
+    "therapyImg"
+    "therapyCont"
+    "decoBioImg"
+    "decoBioCont"
+    "decoArbImg"
+    "decoArbCont"
+    "conflictImg"
+    "conflictCont"
+    "reikiImg"
+    "reikiCont";
+    gap: 10px;
+    align-items: center;
+    img{
+        box-shadow: 7px 13px 37px #000;
+        margin: 10px;
+    }
+}
+.therapyImg{
+    grid-area: therapyImg;
+}
+.therapyCont{
+    grid-area: therapyCont;
+}
+.decoBioImg{
+    grid-area: decoBioImg;
+}
+.decoBioCont{
+    grid-area: decoBioCont;
+}
+.decoArbImg{
+    grid-area: decoArbImg;
+}
+.decoArbCont{
+    grid-area: decoArbCont;
+}
+.conflictImg{
+    grid-area: conflictImg;
+}
+.conflictCont{
+    grid-area: conflictCont;
+}
+.reikiImg{
+    grid-area: reikiImg;
+}
+.reikiCont{
+    grid-area: reikiCont;
+}
+.servicesUl{
+    width: 100%;
+    margin: 1.2rem auto;
+    grid-area: servicesUl;
+}
+.ulContain{
+    display: flex;
+}

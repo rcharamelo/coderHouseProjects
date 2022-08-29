@@ -1,0 +1,61 @@
+/* TESTIMONY STYLES */
+.testimTitle{
+    font-size: 1.8em;
+    text-align: center;
+}
+.container{
+    margin: 2% auto;
+}
+.img-text{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 10% 0%;
+    margin: 1% 1%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 15px;
+    max-width: 350px;
+    h2{
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 30%;
+        margin: 20% auto 0;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+.single-box{
+    position: relative;
+    width: 95%;
+}
+.img-area{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    top: 8em;
+    border-radius: 50%;
+    box-shadow: $box-light;
+    margin: 0 auto;
+    img{
+        width: 100%;
+    }
+}
+.row{
+    align-items: center;
+}
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -50px;
+    button{
+        background-color: #000;
+        border-radius: 10%;
+        width: 15   px;
+        height: 15px;
+    }
+}

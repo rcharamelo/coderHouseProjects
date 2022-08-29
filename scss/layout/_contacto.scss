@@ -1,0 +1,82 @@
+/* CONTACT FORM STYLES *****************/
+.father{
+    display: flex;
+}
+.contactForm {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4em;
+    margin: 0 auto;
+    top: 2em;
+    border-radius: 10px;    
+    border: 1px solid black;
+    position: relative;
+    box-shadow: $box-shadow;
+    }
+.formTitle {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0px auto;
+    padding: 1rem;
+    font-weight: bold;
+}
+.divStyle {
+    margin: 0 auto;
+    list-style: none;
+    width: 100%;
+    padding: 0.62rem;
+}
+/* BOXES STYLES */
+.boxStyle {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.62rem;
+    border-radius: 0.31rem;
+    color: white;
+    font-size: 1.6rem;
+    margin: 0.31rem 0;
+}
+
+/* INPUTS WEBKIT CONFIG */
+input::placeholder{
+    color: white;
+}
+::-webkit-input-placeholder { color: white; } /* WebKit */
+::-moz-placeholder { color: white;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* FORM LIST STYLES */
+.formLi {
+    list-style: none;
+    color: white;
+    text-align: start;
+    font-size: 1.5rem;
+}
+.termCondCheck {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    text-align: start;
+}
+/* H4 STYLE */
+.formH4 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding: 0.62rem;
+}
+/* BUTTONS STYLES */
+.button {
+    color: white;
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0.31rem 1.2rem;
+    width: 50%;
+}

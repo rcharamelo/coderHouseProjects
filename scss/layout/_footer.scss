@@ -1,0 +1,72 @@
+footer{
+    background-color: $background-rgba-dark;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.62rem;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-areas: 
+    "socialCont"
+    "join"
+    "acordContainer"
+    "copyR";
+        a{
+            color: $font-principal;
+            text-decoration: none;
+            padding: 10px;
+        }
+        p{
+            @extend a;
+        }
+}
+.linkIcon{
+    color: #0077b5;
+    font-size: 2em;
+}
+.faceIcon{
+    color: #4267b2;
+    font-size: 2em;
+}
+.instaIcon{
+    color: #fe0076;
+    font-size: 2em;
+}
+.acordContainer{
+    width: 200px;
+    margin: 0 auto;
+    grid-area: acordContainer;
+    padding: 4px 8px;
+    ul{
+        list-style-type: none;
+        padding: 1rem;
+        li{
+            padding: 0.5rem;
+        }
+    }
+}
+details{
+    cursor: pointer;
+    summary{
+        color: white;
+        list-style: none;
+        &::after{
+            content: '+';
+            padding-left: 1rem;
+        }
+    }
+    &[open]
+    summary::after{
+        content: '-';
+    }
+}
+.socialCont{
+    grid-area: socialCont;
+    display: block;
+}
+.join{
+    grid-area: join;
+}
+.copyR{
+    grid-area: copyR;
+}

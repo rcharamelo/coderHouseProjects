@@ -1,0 +1,26 @@
+header{
+    opacity: 0.8;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    h1{
+        font-size: 2rem;
+        color: $font-principal;
+        margin: 0 auto;
+        font-family: 'Dancing Script', cursive;
+    }
+    nav{
+        width: 100%;
+        background-color: $background-rgba-dark;
+        margin: 0 auto;
+        box-sizing: border-box;
+        a{
+            text-decoration: none;
+            color: $font-principal;
+            font-size: 1.8rem;
+            margin: 0.62rem;
+            font-weight: bold;
+        }
+    }
+}
